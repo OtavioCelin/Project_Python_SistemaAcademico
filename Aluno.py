@@ -1,10 +1,13 @@
 class Aluno:
+    _matricula: int
+    _nome: str
+    _curso: str
     
     def __init__(self, matricula, nome, curso):
-        self._matricula = matricula  # Atributo protegido por convenção
-        self._nome = nome            # Atributo protegido por convenção
-        self._curso = curso          # Atributo protegido por convenção
-        self._notas = []             # Atributo protegido por convenção
+        self._matricula = matricula
+        self._nome = nome           
+        self._curso = curso          
+        self._notas = []  
 
     def adicionar_nota(self, nota):
         if nota >= 0 and nota <= 10:

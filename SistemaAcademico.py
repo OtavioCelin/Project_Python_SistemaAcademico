@@ -3,7 +3,7 @@ from Aluno import Aluno
 
 class SistemaAcademico:
     def __init__(self):
-        self._alunos = {}  # Dicionário protegido por convenção
+        self._alunos = {}  
 
     def gerar_matricula(self):
         while True:
@@ -84,4 +84,3 @@ class SistemaAcademico:
             relatorio["menor_media"] = menor
 
         return relatorio
-    
